@@ -49,11 +49,11 @@ Aqui estão as seções principais da nossa apresentação. As imagens abaixo re
 |-------------------------------------------|---------------------------------------------|
 | <p align="center">Tela de Login</p>       | <p align="center">Tela de Inicio</p>      |
 
-| ![Imagem 3](app/img/tela-zonas.png)    | ![Imagem 4](app/img/tela-central.PNG)   |
+| ![Imagem 3](app/img/tela-zonas.png)    | ![Imagem 4](app/img/tela-central.png)   |
 |-------------------------------------------|---------------------------------------------|
 | <p align="center">Tela de Zona</p> | <p align="center">Tela de Mensagem</p> |
 
-| ![Imagem 5](app/img/tela-finalizado.PNG)   | ![Imagem 6](app/img/tela-responsiva.PNG)          |
+| ![Imagem 5](app/img/tela-finalizado.png)   | ![Imagem 6](app/img/tela-responsiva.png)          |
 |-------------------------------------------|---------------------------------------------|
 | <p align="center">Tela de Confirmação</p>   | <p align="center">Tela Responsiva</p>       |
 
