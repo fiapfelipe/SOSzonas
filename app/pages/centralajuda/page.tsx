@@ -12,7 +12,7 @@ export default function CentralAjuda() {
 
   const [cep, setCep] = useState<string>("");
   const [logradouro, setLogradouro] = useState<string>("");
-  const [observacoes, setObservacoes] = useState<string>("");
+  const [texto, setTextos] = useState<string>("");
   const [erroCep, setErroCep] = useState<string>("");
   const [nomeUsuario, setNomeUsuario] = useState<string>("");
 
@@ -45,15 +45,15 @@ export default function CentralAjuda() {
   const enviarMensagem = async () => {
     try {
       await axios.post("/api/mensagens", {
-        texto: observacoes || null,
-        endereco: logradouro || null,
+        endereco: logradouro ? logradouro : "",
+        texto: texto ? texto : "",
         usuario: {
-          id: 0,
-          nome: nomeUsuario || "Anônimo"
+          id: 1,
+          nome: nomeUsuario ? nomeUsuario : "Anônimo"
         }
       });
 
-      router.push("/finalizado");
+      router.push("/pages/finalizado");
     } catch (error) {
       console.error("Erro ao enviar mensagem:", error);
       alert("Erro ao enviar mensagem. Tente novamente.");
@@ -114,8 +114,8 @@ export default function CentralAjuda() {
             <textarea
               className="w-full border px-3 py-2 rounded border-blue-600 text-gray-700 min-h-[100px] resize-y"
               placeholder="Digite aqui..."
-              value={observacoes}
-              onChange={(e) => setObservacoes(e.target.value)}
+              value={texto}
+              onChange={(e) => setTextos(e.target.value)}
             />
           </div>
 
